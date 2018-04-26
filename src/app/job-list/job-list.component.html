@@ -1,0 +1,12 @@
+<section>
+  <h2>Job Listings</h2>
+  <ul id="job-listings">
+    <li *ngFor="let job of jobs | reverse">
+      <h4>{{job.title}}</h4>
+      <small>{{job.pay}}</small>
+      <p>{{job.description}}</p>
+      <small *ngIf="job.interested.length === 1">{{job.interested.length}} dino is interested in this job</small>
+      <small *ngIf="job.interested.length !== 1">{{job.interested.length}} dinos are interested in this job</small>
+    </li>
+  </ul>
+</section>

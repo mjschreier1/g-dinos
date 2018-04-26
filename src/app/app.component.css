@@ -1,0 +1,12 @@
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+app-job-list {
+  width: 42.5%;
+}
+
+app-job-form {
+  width: 42.5%;
+}
